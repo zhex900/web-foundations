@@ -34,7 +34,7 @@
   },
   "type": "module",
   "scripts": {
-    "postinstall": "cd ./epicshop && npm install",
+    "postinstall": "cd ./epicshop && bun install",
     "start": "cd ./epicshop && bun epicshop start --app-location epicshop/node_modules/@zhex900/workshop-app",
     "dev": "npx --prefix ./epicshop epicshop start --app-location epicshop/node_modules/@zhex900/workshop-app",
     "test": "npm run test --silent --prefix playground",
