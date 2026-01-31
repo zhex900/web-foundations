@@ -1,7 +1,7 @@
 {
 	"name": "Web 101",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:24",
-	"postCreateCommand": "curl -fsSL https://bun.sh/install | bash && export PATH=\"$HOME/.bun/bin:$PATH\"  && bun install",
+	"image": "jarredsumner/bun:latest",
+	"postCreateCommand": "bun install",
 	"forwardPorts": [5639],
 	"portsAttributes": {
 		"5639": {
