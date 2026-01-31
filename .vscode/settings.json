@@ -6,11 +6,9 @@
 		"scripts": true,
 		"tests": true,
 		".gitignore": true,
-		"README.md": true,
 		"tsconfig.json": true,
 		"bun.lock": true,
 		"package.json": true,
-		".vscode": true,
 		".devcontainer": true
 	},
 	"files.watcherExclude": {
@@ -20,11 +18,9 @@
 		"scripts": true,
 		"tests": true,
 		".gitignore": true,
-		"README.md": true,
 		"tsconfig.json": true,
 		"bun.lock": true,
 		"package.json": true,
-		".vscode": true,
 		".devcontainer": true
 	}
 }
