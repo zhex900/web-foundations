@@ -1,0 +1,15 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "▶ Launch Dev Server",
+			"runtimeExecutable": "/home/node/.bun/bin/bun",
+			"runtimeArgs": ["run", "start"],
+			"console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+			"skipFiles": ["<node_internals>/**"]
+		}
+	]
+}
