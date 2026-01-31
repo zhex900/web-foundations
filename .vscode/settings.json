@@ -9,12 +9,12 @@
 //		"*.*": true
 	},
 	"files.watcherExclude": {
-		"node_modules/": true,
-		"epicshop": true,
-		"public": true,
-		"scripts": true,
-		"tests": true,
-		".*": true,
-		"*.*": true
+		// "node_modules/": true,
+		// "epicshop": true,
+		// "public": true,
+		// "scripts": true,
+		// "tests": true,
+		// ".*": true,
+		// "*.*": true
 	}
 }
