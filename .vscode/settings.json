@@ -1,27 +1,27 @@
 {
-	"git.autofetch": false,
-	"files.exclude": {
-		"node_modules/": true,
-		"epicshop": true,
-		"public": true,
-		"scripts": true,
-		"tests": true,
-		".gitignore": true,
-		"tsconfig.json": true,
-		"bun.lock": true,
-		"package.json": true,
-		".devcontainer": true
-	},
-	"files.watcherExclude": {
-		"node_modules/": true,
-		"epicshop": true,
-		"public": true,
-		"scripts": true,
-		"tests": true,
-		".gitignore": true,
-		"tsconfig.json": true,
-		"bun.lock": true,
-		"package.json": true,
-		".devcontainer": true
-	}
+	"git.autofetch": false
+	// "files.exclude": {
+	// 	"node_modules/": true,
+	// 	"epicshop": true,
+	// 	"public": true,
+	// 	"scripts": true,
+	// 	"tests": true,
+	// 	".gitignore": true,
+	// 	"tsconfig.json": true,
+	// 	"bun.lock": true,
+	// 	"package.json": true,
+	// 	".devcontainer": true
+	// },
+	// "files.watcherExclude": {
+	// 	"node_modules/": true,
+	// 	"epicshop": true,
+	// 	"public": true,
+	// 	"scripts": true,
+	// 	"tests": true,
+	// 	".gitignore": true,
+	// 	"tsconfig.json": true,
+	// 	"bun.lock": true,
+	// 	"package.json": true,
+	// 	".devcontainer": true
+	// }
 }

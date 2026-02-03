@@ -58,7 +58,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@epic-web/workshop-utils": "^6.78.0"
+    "@zhex900/workshop-utils": "^0.1.9"
   },
   "workspaces": [
     "exercises/*/*",
