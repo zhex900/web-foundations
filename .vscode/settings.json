@@ -11,7 +11,8 @@
 	// 	"tsconfig.json": true,
 	// 	"bun.lock": true,
 	// 	"package.json": true,
-	// 	".devcontainer": true
+	// 	".devcontainer": true,
+	// 	"exercises/*/*.solution.*/": true
 	// },
 	// "files.watcherExclude": {
 	// 	"node_modules/": true,
@@ -23,6 +24,7 @@
 	// 	"tsconfig.json": true,
 	// 	"bun.lock": true,
 	// 	"package.json": true,
-	// 	".devcontainer": true
+	// 	".devcontainer": true,
+	// 	"exercises/*/*.solution.*/": true
 	// }
 }
