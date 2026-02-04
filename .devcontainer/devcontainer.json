@@ -18,6 +18,12 @@
 				"ms-vsliveshare.vsliveshare"
 			],
 			"settings": {
+				"extensions.ignoreRecommendations": true,
+				"github.copilot.chat.enabled": false,
+				"github.copilot.chat.openOnStartup": false,
+				"chat.enabled": false,
+				"chat.openOnStartup": false,
+				"editor.inlineSuggest.enabled": false,
 				"editor.formatOnSave": true,
 				"editor.defaultFormatter": "esbenp.prettier-vscode",
 				"eslint.validate": [
@@ -28,7 +34,11 @@
 				],
 				"editor.codeActionsOnSave": {
 					"source.fixAll.eslint": "explicit"
-				}
+				},
+				"workbench.startupEditor": "none",
+				"workbench.secondarySideBar.defaultVisibility": "hidden",
+				"workbench.editor.restoreViewState": false,
+				"window.restoreWindows": "none"
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 {
-	"git.autofetch": false
+	"git.autofetch": false,
+	"chat.disableAIFeatures": true
 	// "files.exclude": {
 	// 	"node_modules/": true,
 	// 	"epicshop": true,
