@@ -3,12 +3,14 @@
 	"chat.disableAIFeatures": true,
 	"files.exclude": {
 		"node_modules/": true,
+		"playground/": true,
 		"epicshop": true,
 		"public": true,
 		"scripts": true,
 		"tests": true,
 		".gitignore": true,
 		"tsconfig.json": true,
+		"extra": true,
 		"bun.lock": true,
 		"package.json": true,
 		".devcontainer": true,
@@ -19,11 +21,13 @@
 		"epicshop": true,
 		"public": true,
 		"scripts": true,
+		"extra": true,
 		"tests": true,
 		".gitignore": true,
 		"tsconfig.json": true,
 		"bun.lock": true,
 		"package.json": true,
+		"playground/": true,
 		".devcontainer": true,
 		"exercises/*/*.solution.*/": true
 	}
