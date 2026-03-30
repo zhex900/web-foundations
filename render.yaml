@@ -1,0 +1,31 @@
+# Render Blueprint — deploy MiniBook demo-app (Bun + SQLite).
+# Repo: https://render.com/docs/blueprint-spec
+#
+# After connecting this repo, Render picks up render.yaml from the repo root.
+# The service uses `demo-app` as rootDir (monorepo layout).
+
+services:
+  - type: web
+    name: demo-app
+    runtime: node
+    region: oregon
+    plan: starter
+    rootDir: demo-app
+    buildCommand: bun install
+    startCommand: bun run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render injects PORT; server.js already uses process.env.PORT
+      # Optional: set a custom demo password (override default in .env.example)
+      # - key: DEMO_PASSWORD
+      #   sync: false
+      # SQLite: without a persistent disk, the DB is ephemeral (reset on redeploy).
+      # For a paid web service, add a disk in the dashboard and set:
+      # - key: DB_PATH
+      #   value: /data/demo.sqlite
+    # Uncomment on a paid plan after adding a persistent disk mount at /data:
+    # disk:
+    #   name: sqlite-data
+    #   mountPath: /data
+    #   sizeGB: 1
