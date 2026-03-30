@@ -1,0 +1,34 @@
+{
+	"git.autofetch": false,
+	"chat.disableAIFeatures": true,
+	"files.exclude": {
+		"node_modules/": true,
+		"playground/": true,
+		"epicshop": true,
+		"public": true,
+		"scripts": true,
+		"tests": true,
+		".gitignore": true,
+		"tsconfig.json": true,
+		"extra": true,
+		"bun.lock": true,
+		"package.json": true,
+		".devcontainer": true,
+		"exercises/*/*.solution.*/": true
+	},
+	"files.watcherExclude": {
+		"node_modules/": true,
+		"epicshop": true,
+		"public": true,
+		"scripts": true,
+		"extra": true,
+		"tests": true,
+		".gitignore": true,
+		"tsconfig.json": true,
+		"bun.lock": true,
+		"package.json": true,
+		"playground/": true,
+		".devcontainer": true,
+		"exercises/*/*.solution.*/": true
+	}
+}

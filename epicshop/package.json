@@ -2,8 +2,8 @@
   "type": "module",
   "dependencies": {
     "@epic-web/workshop-presence": "^6.78.0",
-    "@zhex900/workshop-app": "^0.1.0",
-    "@epic-web/workshop-utils": "^6.78.0",
+    "@zhex900/workshop-app": "^0.1.9",
+    "@zhex900/workshop-utils": "^0.1.9",
     "chokidar": "^5.0.0",
     "enquirer": "^2.4.1",
     "epicshop": "^6.77.0",
