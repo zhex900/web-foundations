@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Foundations — a hands-on holiday course in web development for senior high school students."
+    />
+    <title>Web Foundations — Course overview for families</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1419;
+        --bg-elevated: #1a222c;
+        --text: #e8eaed;
+        --text-muted: #9aa5b1;
+        --accent: #3d9cf0;
+        --accent-soft: rgba(61, 156, 240, 0.12);
+        --border: rgba(255, 255, 255, 0.08);
+        --radius: 14px;
+        --max: 720px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "DM Sans", system-ui, sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.65;
+        color: var(--text);
+        background: var(--bg);
+        background-image: radial-gradient(
+            ellipse 120% 80% at 50% -20%,
+            rgba(61, 156, 240, 0.15),
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse 60% 40% at 100% 50%,
+            rgba(120, 90, 200, 0.06),
+            transparent
+          );
+        min-height: 100vh;
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+        background: var(--accent-soft);
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: clamp(1.85rem, 5vw, 2.35rem);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 0.75rem;
+        letter-spacing: -0.02em;
+      }
+
+      .lede {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        margin: 0;
+        max-width: 38em;
+      }
+
+      .meta {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+        color: var(--text-muted);
+      }
+
+      .meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+
+      h2 {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin: 2.25rem 0 0.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      h2:first-of-type {
+        margin-top: 0;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--text-muted);
+      }
+
+      p strong,
+      li strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.25rem;
+        color: var(--text-muted);
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      .card {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.35rem 1.5rem;
+        margin: 1.25rem 0;
+      }
+
+      .card p:last-child {
+        margin-bottom: 0;
+      }
+
+      .instructor-intro {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.35rem;
+        flex-wrap: wrap;
+      }
+
+      .instructor-intro .instructor-text {
+        flex: 1;
+        min-width: min(100%, 16rem);
+      }
+
+      .instructor-intro .instructor-text p:last-child {
+        margin-bottom: 0;
+      }
+
+      .instructor-avatar {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--border);
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 520px) {
+        .instructor-intro {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .instructor-intro .instructor-text {
+          text-align: left;
+        }
+      }
+
+      .pill-list {
+        list-style: none;
+        padding: 0;
+        margin: 0.75rem 0 0;
+      }
+
+      .pill-list li {
+        position: relative;
+        padding-left: 1.35rem;
+        margin-bottom: 0.65rem;
+      }
+
+      .pill-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.55em;
+        width: 0.45rem;
+        height: 0.45rem;
+        background: var(--accent);
+        border-radius: 50%;
+        opacity: 0.85;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+        margin: 1rem 0 0;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 0.85rem 1rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--text-muted);
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      td:first-child {
+        font-weight: 600;
+        color: var(--text);
+        white-space: nowrap;
+        width: 1%;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .session-note {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-top: 1rem;
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 540px) {
+        th,
+        td {
+          display: block;
+          padding: 0.5rem 0;
+        }
+
+        tr {
+          display: block;
+          padding: 1rem 0;
+          border-bottom: 1px solid var(--border);
+        }
+
+        tr:last-child {
+          border-bottom: none;
+        }
+
+        td:first-child {
+          padding-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="badge">Course overview</p>
+        <h1>Web Foundations</h1>
+        <p class="lede">
+          A hands-on introduction to real-world web development for senior high
+          school students—offered during the school holidays.
+        </p>
+        <div class="meta">
+          <span><strong>Format</strong> — 5 days × 2 hours</span>
+          <span><strong>Total</strong> — 10 hours</span>
+          <span><strong>Style</strong> — Learn by doing (not lecture-only)</span>
+        </div>
+      </header>
+
+      <section aria-labelledby="goal-heading">
+        <h2 id="goal-heading">Goal of the course</h2>
+        <p>
+          The aim is to give students a <strong>realistic taste</strong> of how
+          modern websites and web apps are built—using <strong>real tools</strong>
+          that professionals use, in a structured, supportive classroom—not
+          passive slides or toy “drag-and-drop” pages alone.
+        </p>
+        <p>
+          Students work toward understanding how the pieces fit together: the
+          <strong>browser</strong>, the <strong>server</strong>, and
+          <strong>stored data</strong>—so they leave with a clearer picture of
+          what “full stack” means and whether they want to explore computing
+          further.
+        </p>
+      </section>
+
+      <section aria-labelledby="project-heading">
+        <h2 id="project-heading">One project from start to finish</h2>
+        <p>
+          The whole course centres on building and exploring a
+          <strong>realistic social feed app</strong> (comments, replies, likes,
+          sign-in, profiles—similar in spirit to familiar social products, but
+          simplified for learning).
+        </p>
+        <div class="card">
+          <p>
+            We begin with a <strong>working application</strong>. Each lesson,
+            students either <strong>add a new feature</strong> or
+            <strong>unpack an existing part</strong> (“reverse engineer” it) to
+            learn a concept. That way, every change connects to something visible
+            on screen.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="methods-heading">
+        <h2 id="methods-heading">How we teach (not by long lectures)</h2>
+        <ul class="pill-list">
+          <li>
+            <strong>Step-by-step instructions first.</strong> Students follow
+            clear directions and type or copy code with purpose. We encourage
+            them to look things up, read error messages, and try again—building
+            <strong>self-education</strong> and “teach yourself” habits, which
+            matter far beyond this course.
+          </li>
+          <li>
+            <strong>See the effect, then the explanation.</strong> Early on,
+            students may not fully grasp <em>why</em> a snippet works. They
+            <em>will</em> see how a change in code shows up in the app. Deeper
+            explanation follows once there is something concrete to point at.
+          </li>
+          <li>
+            <strong>Exercises are marked.</strong> Each exercise receives
+            feedback so students know what they completed successfully and where
+            to improve—supporting steady progress across the five days.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="schedule-heading">
+        <h2 id="schedule-heading">Daily schedule (overview)</h2>
+        <p>
+          Each two-hour session typically includes a short warm-up, instructor
+          demonstration, hands-on work, and a brief wrap-up. Exact timings may
+          shift slightly to suit the group.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Focus (parent-friendly summary)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Day 1</td>
+              <td>
+                The big picture: how the <strong>web stack</strong> fits
+                together—browser, network, server, and data. Students run the app
+                and connect what they see on screen to files and requests.
+              </td>
+            </tr>
+            <tr>
+              <td>Day 2</td>
+              <td>
+                <strong>Pages, forms, and the browser</strong>—HTML structure,
+                how forms send data, and light JavaScript to load and show
+                content (the “client” side).
+              </td>
+            </tr>
+            <tr>
+              <td>Day 3</td>
+              <td>
+                <strong>The server</strong>—how a program listens for requests,
+                routes URLs to code, and serves pages and files safely (using a
+                modern runtime suited to the classroom project).
+              </td>
+            </tr>
+            <tr>
+              <td>Day 4</td>
+              <td>
+                <strong>Sign-in, sessions, and APIs</strong>—how accounts and
+                permissions work at a high level, and how the browser and server
+                agree on who is allowed to do what.
+              </td>
+            </tr>
+            <tr>
+              <td>Day 5</td>
+              <td>
+                <strong>Databases and going live</strong>—storing posts and
+                users, simple queries, and what changes when an app is deployed to
+                the internet (with sensible, age-appropriate discussion).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="session-note">
+          This outline matches the instructor lesson plan; vocabulary in class
+          may be adjusted for clarity while keeping the same learning goals.
+        </p>
+      </section>
+
+      <section aria-labelledby="note-heading">
+        <h2 id="note-heading">Practical expectations</h2>
+        <p>
+          Students should be comfortable using a <strong>computer keyboard</strong>,
+          following written steps, and asking for help when stuck—curiosity and
+          persistence are more important than prior programming experience.
+        </p>
+      </section>
+
+      <section aria-labelledby="instructor-heading" class="card">
+        <h2 id="instructor-heading">About the instructor</h2>
+        <div class="instructor-intro">
+          <img
+            class="instructor-avatar"
+            src="jake.png"
+            width="112"
+            height="112"
+            alt="Portrait of Jake, the course instructor"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="instructor-text">
+            <p>
+              Hi 👋 — I’m Jake. I’m a senior software engineer, passionate about
+              fostering the next generation of young engineers. I studied
+              <strong>Computer Science (Honours) at UNSW</strong>, and I’ve spent
+              <strong>over ten years</strong> working in web development.
+            </p>
+            <p>
+              For me, this isn’t only about teaching technology—it’s about
+              <strong>motivating young people to learn and experiment</strong> for
+              themselves. In the age of AI, having a <strong>deep understanding of
+              how technology works</strong> is essential; we can’t afford to blindly
+              trust automated systems. Without that foundation, it’s easy to accept
+              results without understanding <em>why</em>, or to find it harder to
+              <strong>think independently</strong>. I created Web Foundations to help
+              bridge that gap.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          This page is for <strong>information only</strong>. Enrollment and
+          holiday-session details are coordinated through your school or program
+          organiser—not via this site.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
